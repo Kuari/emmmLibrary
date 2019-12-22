@@ -12,13 +12,9 @@
 </template>
 
 <script>
-import hello from "./components/HelloWorld";
-
 export default {
   name: "app",
-  components: {
-    hello
-  },
+  components: {},
   methods: {}
 };
 </script>
