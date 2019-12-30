@@ -6,8 +6,6 @@ from server.models import ARCHIVE_INDEX, ARCHIVE, ARTICLE, TOPIC
 
 from flask_restful import Resource, Api, reqparse
 
-from server.getArticleContent import getAC
-
 api = Api(app)
 
 
