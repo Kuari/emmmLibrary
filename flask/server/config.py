@@ -4,14 +4,13 @@ import sys
 
 from server import app
 
-
 SECRET_KEY = os.getenv('SECRET_KEY', os.urandom(24))
 
 dev_db = 'sqlite:////' + os.path.join(os.path.dirname(app.root_path), 'data.db')
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URI', dev_db)
 
-RESTFUL_JSON=dict(ensure_ascii=False)
+RESTFUL_JSON = dict(ensure_ascii = False)
 
 # mariadb
 # HOSTNAME = '127.0.0.1'
@@ -24,4 +23,3 @@ RESTFUL_JSON=dict(ensure_ascii=False)
 # SQLALCHEMY_DATABASE_URI = DB_URI
 
 # SQLALCHEMY_TRACK_MODIFICATIONS = True
-
